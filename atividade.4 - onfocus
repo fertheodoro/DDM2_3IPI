@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo onfocus</title>
+</head>
+<body>
+
+    <p>Quando o campo de entrada recebe foco, uma função altera a cor de fundo.</p>
+
+    Digite seu nome: <input type="text" onfocus="myFunction(this)">
+
+    <script>
+        function myFunction(x) {
+            x.style.background = "DeepPink";
+        }
+    </script>
+
+</body>
+</html>
