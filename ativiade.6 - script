@@ -1,0 +1,9 @@
+var botao = document.getElementById("botao");
+var contador = document.getElementById("contador");
+
+var count = 0;
+
+botao.addEventListener("click", function() {
+    count++;
+    contador.textContent = count;
+});
