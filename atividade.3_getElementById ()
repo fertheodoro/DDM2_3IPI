@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h1>The Document Object</h1>
-<h2>The getElementById() Method</h2>
-
+<head>
+    <title>Exemplo getElementById ()< /title>
+</head>
 <p id="demo"></p>
 
 <script>
