@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Exemplo onchange </title>
+    <style>
+        body {
+            font-size: 20px; 
+        }
+        select {
+            font-size: 20px; 
+            width: 300px; 
+            padding: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <p>Quando você seleciona um Fast Food, uma função é acionada que emite o value do Fast Food selecionado.</p>
+
+    <p>Selecione um Fast Food da lista.</p>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="Mc Donald's">Mc Donald's</option>
+        <option value="Burguer king">Burguer king</option>
+        <option value="Subway's">Subway's</option>
+        <option value="Habbib's">Habbib's</option>
+    </select>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML = "Você selecionou: " + x;
+        }
+    </script>
+</body>
+</html>
