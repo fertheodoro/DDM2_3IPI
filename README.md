@@ -1,2 +1,2 @@
-# DDM2_3IPI_Atividade.js
+# DDM2_3IPI
 Aulas de React Native, e revisão de Javascript
