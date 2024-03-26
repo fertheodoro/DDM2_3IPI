@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Strings para Caixa Alta</title>
+    <style>
+        input[type="text"] {
+            font-size: 20px;
+            width: 200px; 
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            font-size: 18px;
+            padding: 12px 24px;
+            background-color: #FB7B8F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: DeepPink;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="Digite uma string">
+    <button onclick="converterString()">Converter para Caixa Alta</button>
+    <p id="resultado"></p>
+
+    <script>
+        function converterParaCaixaAlta(str) {
+            return str.toUpperCase();
+        }
+
+        function converterString() {
+            var inputString = document.getElementById("inputString").value;
+            var resultado = document.getElementById("resultado");
+            
+            if (inputString.trim() === "") {
+                resultado.textContent = "Por favor, insira uma string.";
+            } else {
+                var stringConvertida = converterParaCaixaAlta(inputString);
+                resultado.textContent = "String em caixa alta: " + stringConvertida;
+            }
+        }
+    </script>
+</body>
+</html>
