@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo querySelectorAll()</title>
+</head>
+<body>
+
+    <p>Adicionar uma cor de fundo em todos os elementos com class="example":</p>
+    <p class="example">Olá!</p>
+    <p class="example">Seja bem vindo!</p>
+    <p class="example">Como você está?</p>
+
+    <script>
+        const nodeList = document.querySelectorAll(".example");
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i].style.backgroundColor = "Pink";
+        }
+    </script>
+
+</body>
+</html>
