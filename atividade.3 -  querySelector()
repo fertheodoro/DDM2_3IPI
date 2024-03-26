@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo querySelector()</title>
+</head>
+<body>
+
+<p>Adicionar uma cor de fundo ao primeiro elemento com class="example":</p>
+
+<p class="example">Bom dia!</p>
+<p class="example">Tudo bem?</p> 
+
+<script>
+    document.querySelector(".example").style.backgroundColor = "DeepPink";
+</script>
+
+</body>
+</html>
