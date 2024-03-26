@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+  <title>Exemplo getElementsByTagName()</title>
+
+
+<p>Uma lista não ordenada:</p>
+<ul>
+  <li>café</li>
+  <li>chá</li>
+  <li>leite</li>
+</ul>
+
+<p>O innerHTML do segundo elemento li é:</p>
+<p id="demo"></p>
+<script>
+const collection = document.getElementsByTagName("li");
+document.getElementById("demo").innerHTML = collection[1].innerHTML;
+</script>
+
+</body>
+</html>
